@@ -1,2 +1,2 @@
 # fakenews--authentication
-Using multiple model with lime a text explainer to authentication that given news is how much true and how much false with the probability.
+Using multiple model with lime a text explainer to authentication that given news is how much authentic and how much non_authentic with the probability.
