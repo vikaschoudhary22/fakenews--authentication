@@ -16,9 +16,11 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - uses: eskatos/gradle-command-action@v1
-        with:
-          arguments: dependencyCheckAnalyze
+#       - uses: eskatos/gradle-command-action@v1
+#         with:
+#           arguments: dependencyCheckAnalyze
+      - name : run gradle
+        run : gradle dependencyCheckAnalyze --info 
       - name: Backup JSON Report
         if: "${{ always() }}"
         uses: actions/upload-artifact@v2
