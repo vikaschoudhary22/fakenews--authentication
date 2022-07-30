@@ -26,6 +26,9 @@ jobs:
         with:
           egress-policy: audit
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Dependency Check
+        uses: dependency-check/Dependency-Check_Action@1.1.0
+
       - uses: actions/checkout@v3
   
       # Runs a single command using the runners shell
